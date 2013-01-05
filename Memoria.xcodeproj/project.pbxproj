@@ -16,6 +16,7 @@
 		6A134A6D15E3CB8800191E26 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A134A6B15E3CB8800191E26 /* MainStoryboard_iPhone.storyboard */; };
 		6A134A7015E3CB8800191E26 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A134A6E15E3CB8800191E26 /* MainStoryboard_iPad.storyboard */; };
 		6A134A7315E3CB8800191E26 /* PrincipalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A134A7215E3CB8800191E26 /* PrincipalViewController.m */; };
+		6A134A7B15E3CBBA00191E26 /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A134A7A15E3CBBA00191E26 /* Pessoa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		6A134A6F15E3CB8800191E26 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		6A134A7115E3CB8800191E26 /* PrincipalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrincipalViewController.h; sourceTree = "<group>"; };
 		6A134A7215E3CB8800191E26 /* PrincipalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrincipalViewController.m; sourceTree = "<group>"; };
+		6A134A7915E3CBBA00191E26 /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pessoa.h; sourceTree = "<group>"; };
+		6A134A7A15E3CBBA00191E26 /* Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pessoa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,8 @@
 		6A134A4A15E3CB8700191E26 = {
 			isa = PBXGroup;
 			children = (
+				6A134A7915E3CBBA00191E26 /* Pessoa.h */,
+				6A134A7A15E3CBBA00191E26 /* Pessoa.m */,
 				6A134A5F15E3CB8800191E26 /* Memoria */,
 				6A134A5815E3CB8700191E26 /* Frameworks */,
 				6A134A5615E3CB8700191E26 /* Products */,
@@ -169,6 +174,7 @@
 				6A134A6615E3CB8800191E26 /* main.m in Sources */,
 				6A134A6A15E3CB8800191E26 /* PrincipalAppDelegate.m in Sources */,
 				6A134A7315E3CB8800191E26 /* PrincipalViewController.m in Sources */,
+				6A134A7B15E3CBBA00191E26 /* Pessoa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

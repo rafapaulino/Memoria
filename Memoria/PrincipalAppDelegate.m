@@ -7,6 +7,7 @@
 //
 
 #import "PrincipalAppDelegate.h"
+#import "Pessoa.h"
 
 @implementation PrincipalAppDelegate
 
@@ -18,6 +19,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    Pessoa *pessoa1 = [[Pessoa alloc] init];
+    //neste momento o RC da pessoa criada foi para 1
+    
+    [pessoa1 retain]; //incrementa na memoria +1
+    [pessoa1 retain]; //incrementa na memoria +1
+    
+    
+    //manipular a pessoa de varias formas, alterando atributos ou chamnado seus metodos
+    pessoa1.nome = @"Eduardo";
+    NSLog(@"Nome da pessoa: %@",pessoa1.nome);
+    
+    //antes do arc eu tinha que me preocupar e reduzir o RC para zero, para o objeto sair da memoria. eu fazia isso chamando o metodo release do objeto
+    [pessoa1 release];
+    [pessoa1 release];
+    [pessoa1 release];
+    
+    NSLog(@"Nome da pessoa: %@", pessoa1.nome);
+    
+    pessoa1.nome = @"Roberto";
+    
+    NSLog(@"Nome da pessoa: %@", pessoa1.nome);
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
